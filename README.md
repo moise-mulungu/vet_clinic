@@ -1,5 +1,5 @@
 # Vet_clinic
-On this milestone, I updated, deleted, used transaction add aggregation functions.
+On this milestone, I used the primary and foreign key to join tables, queried multiple tables and prepared complex queries.
 
 ## Getting Started
 
