@@ -1,5 +1,5 @@
 # Vet_clinic
-This is my first SQL App, where I created a vet_clinic data with a table called animals.
+On this milestone, I updated, deleted, used transaction add aggregation functions.
 
 ## Getting Started
 
