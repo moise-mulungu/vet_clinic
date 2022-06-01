@@ -12,3 +12,9 @@ CREATE TABLE animals (
 -- Adding a species column
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100);
+
+-- Create owners table
+CREATE TABLE owners(
+id SERIAL NOT NULL PRIMARY KEY,
+full_name VARCHAR(100),
+age INT);
