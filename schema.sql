@@ -12,3 +12,35 @@ CREATE TABLE animals (
 -- Adding a species column
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100);
+
+-- Create owners table
+CREATE TABLE owners(
+id SERIAL NOT NULL PRIMARY KEY,
+full_name VARCHAR(100) NOT NULL,
+age INT NOT NULL
+);
+
+-- Create species table
+CREATE TABLE species(
+id SERIAL NOT NULL PRIMARY KEY,
+name VARCHAR(100) NOT NULL
+);
+
+-- Modifying animals table
+-- Remove the species column
+ALTER TABLE animals
+DROP COLUMN species;
+
+-- Add a species_id column
+ALTER TABLE animals
+    ADD COLUMN species_id INT;
+    ADD CONSTRAINT fk_species_id 
+    FOREIGN KEY (species_id) 
+    REFERENCES species(id);
+
+-- Add a owner_id column
+ALTER TABLE animals
+    ADD COLUMN owner_id INT;
+    ADD CONSTRAINT fk_owner_id
+    FOREIGN KEY (owner_id)
+    REFERENCES owners(id);
