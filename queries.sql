@@ -61,7 +61,7 @@ SELECT * FROM animals;
 --Delete all animals born after Jan 1st, 2022.
 BEGIN;
 DELETE FROM animals
-WHERE date_of_birth > '2022-01-01';
+WHERE date_of_birth >= '2022-01-01';
 
 --Create a savepoint for the transaction.
 SAVEPOINT deleteAnimalsBornAfterJan2022;
