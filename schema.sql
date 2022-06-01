@@ -23,3 +23,8 @@ age INT);
 CREATE TABLE species(
 id SERIAL NOT NULL PRIMARY KEY,
 name VARCHAR(100));
+
+-- Modifying animals table
+-- Remove the species column
+ALTER TABLE animals
+DROP COLUMN species;
