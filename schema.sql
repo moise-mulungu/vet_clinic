@@ -28,3 +28,11 @@ name VARCHAR(100));
 -- Remove the species column
 ALTER TABLE animals
 DROP COLUMN species;
+
+-- Add a species_id column
+ALTER TABLE animals
+ADD COLUMN species_id INT;
+
+-- Add a owner_id column
+ALTER TABLE animals
+ADD COLUMN owner_id INT;
