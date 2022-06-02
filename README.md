@@ -1,5 +1,5 @@
 # Vet_clinic
-On this milestone, I used the primary and foreign key to join tables, queried multiple tables and prepared complex queries.
+On this milestone, I used both the primary and foreign key to make relationships between tables.
 
 ## Getting Started
 
