@@ -66,3 +66,14 @@ CREATE TABLE vets(
         REFERENCES vets(id)
 );
 
+-- Create another join-table named visits 
+CREATE TABLE visits(
+    vets_id INT NOT NULL,
+    animals_id INT NOT NULL,
+    CONSTRAINT fk_animals 
+        FOREIGN KEY (animals_id) 
+        REFERENCES animals (id),
+    CONSTRAINT fk_vets 
+        FOREIGN KEY (vets_id) 
+        REFERENCES vets (id)
+);
