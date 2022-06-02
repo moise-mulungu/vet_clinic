@@ -78,3 +78,8 @@ CREATE TABLE visits(
         REFERENCES vets (id)
 );
 
+-- Adding a missing column to the visits table
+ALTER TABLE visits
+ADD COLUMN date_visit DATE NOT NULL;
+
+
