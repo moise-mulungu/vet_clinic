@@ -77,3 +77,4 @@ CREATE TABLE visits(
         FOREIGN KEY (vets_id) 
         REFERENCES vets (id)
 );
+
